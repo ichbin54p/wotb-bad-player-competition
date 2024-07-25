@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bad Player Competition | Home | WoTB</title>
+    <link rel="stylesheet" href="/resource/main.css">
+</head>
+<body>
+    <div id="topbar">
+        <h1>
+            <b id="title" onclick="window.location.replace('/')">Bad Player Competition</b> 
+            <a href="/account">Account</a> 
+            <a href="/browse">Browse</a> 
+            <a href="/submit">Submit</a>
+        </h1>
+    </div>
+    <div id="main">
+        <h1>Browse Scores</h1>
+        <h2>Sort by: 
+            <select id="sort">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="score">Score</option>
+            </select>
+            <select id="unverified">
+                <option value="1">Verified</option>
+                <option value="2">Unverified</option>
+                <option value="3">Both</option>
+            </select>
+            <button onclick="sort_scores()">Sort</button>
+        </h2>
+        <div id="scores"></div>
+    </div>
+    <script src="/resource/main.js"></script>
+    <script src="/resource/browse_scores.js"></script>
+    <script src="/resource/staff.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bad Player Competition | Home | WoTB</title>
+    <link rel="stylesheet" href="/resource/main.css">
+</head>
+<body>
+    <div id="topbar">
+        <h1>
+            <b id="title" onclick="window.location.replace('/')">Bad Player Competition</b> 
+            <a href="/account">Account</a> 
+            <a href="/browse">Browse</a> 
+            <a href="/submit">Submit</a>
+        </h1>
+    </div>
+    <div id="main">
+        <h1>Submit</h1>
+        <h2>Submitting with account: <b id="username"></b></h2>
+        <input id="player" placeholder="Username of the player" type="username">
+        <br>
+        <br>
+        <div id="screenshot-proof">
+            <h3>Paste your screenshot proof here with, Ctrl + v</h3>
+            <b>Your screenshot should be a full screenshot of the battle results on the last page (displaying teammates and opponents)</b>
+            <br>
+            <br>
+            <b>If you want to get a screenshot, just use window + shift + s and it should be copied to your clipboard, then you can just paste it here, this method is for windows, if you're on linux, you should press prnt sc.</b>
+            <br>
+            <br>
+            <div id="screenshot-proof-image"></div>
+        </div>
+        <br>
+        <button id="submit">Submit</button>
+        <br>
+        <p><b>NOTE: </b>Make sure you pasted an image and the player username is correct</p>
+    </div>
+    <script src="/resource/main.js"></script>
+    <script src="/resource/submit.js"></script>
+    <script src="/resource/staff.js"></script>
+</body>
+</html>
